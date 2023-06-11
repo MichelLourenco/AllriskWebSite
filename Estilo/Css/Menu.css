@@ -1,0 +1,108 @@
+/* Menu e cabeçalho do site */
+
+.Cabecalho{
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    /* position: absolute; */
+}
+
+.Aviso{
+    width: 100%;
+    display: none;
+    color: var(--cor1);
+    padding: 10px 0px;
+    background-color: var(--cor5);
+    align-items: left;
+    justify-content: left;
+}
+
+.Aviso .Link{
+    margin: 0px 5px;
+    color: var(--cor1);
+}
+
+.Aviso .Link:hover{
+    color: var(--cor4);
+}
+
+.Login{
+    display: flex;
+    justify-content: space-between;
+}
+
+.Link{
+    cursor: pointer;
+    text-decoration: none;
+    transition-duration: 0.5s;
+}
+
+.Link:hover{
+    color: var(--cor4);
+}
+
+.Menu{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    background-color: var(--cor6);
+    border-bottom: 1px solid rgba(160, 159, 159, 0.349);
+}
+
+.Links{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.Links li{
+    display: flex;
+    padding: 5px 10px;
+}
+
+.Links li a{
+    color: var(--cor1);
+    /* color: var(--cor5); */
+}
+
+.Links img{
+    padding: 5px;
+}
+
+.RightMenu{
+    right: -350px;
+    width: 350px;
+    height: 100%;
+    z-index: 12;
+    position: fixed;
+    background-color: var(--cor6);
+}
+
+.RightMenu .Close{
+    padding: 15px;
+    right: 0;
+    position: absolute;
+    cursor: pointer;
+    border-radius: 100%;
+}
+
+.RightMenu strong{
+    margin-left: 20px;
+}
+
+.RightMenu .languages .set{
+    justify-content: flex-start;
+    padding: 20px;
+    cursor: pointer;
+}
+
+@media  (max-width: 800px) {
+    .Links{
+        display: none;
+    }
+}

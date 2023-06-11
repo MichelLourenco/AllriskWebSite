@@ -1,11 +1,156 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>AllRisk Soluções</title>
+        <title>Soluções corporativas | AllRisk</title>
+        <meta name="description" content="Descrição do site aqui">
+        <link rel="stylesheet" href="./Estilo/Css/Estilo.css">
+        <link rel="stylesheet" href="./Estilo/Css/Menu.css">
+        <link rel="shortcut icon" href="./Estilo/Icones/Logo.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <style>
+            .description{
+                z-index: 9;
+                max-width: 50%;
+                position: absolute;
+                color: white;
+                padding: 50px;
+                text-align: start;
+            }
+
+            .description h1{
+                font-size: 50px;
+            }
+
+            .description a{
+                color: white;
+            }
+
+            .Produtos .Card{
+                background-color: #fff;
+                align-items: flex-start;
+                text-align: left;
+            }
+
+            .Home{
+                /* background-image: url('./Estilo/Imagens/Fundo.webp');
+                background-size: cover; */
+                background-color: #8FB996;
+                min-height: 90% !important;
+            }
+
+            @media  (max-width: 800px) {
+                video{
+                    display: none;
+                }
+
+                .Home{
+                    height: 600px;
+                    background-color: #000;
+                }
+
+                .description{
+                    max-width: 90%;
+                }
+            }
+        </style>
+        <script>
+            localStorage.setItem('place', './');
+        </script>
     </head>
     <body>
-        
+        <div class="Fundo">
+			<div class="Alerta">
+				<img name="IconeAlerta" src="">
+				<line></line>
+				<strong name="TituloAlerta">Atenção</strong>
+				<line></line>
+				<p name="TextoAlerta" >Mensagem de teste da caixa de mensagem</p>
+				<line></line>
+				<div class="Botoes">
+					<button name="Aceitar" onclick="" class="Secundario">Sim</button>
+					<button name="Cancelar" onclick="" class="Primario">Não</button>
+				</div>
+			</div>
+		</div>
+        <div class="shadow hide"></div>
+        <div class="Temp"></div>
+        <div class="Cabecalho">
+            <div class="Aviso">
+                <img style="margin-left: 20px;" class="Link" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABT0lEQVQ4jdXUsU4bQRAG4I+IhigdJVCRHngDY+gQUCROHTqQqGiQEBUFBRK8gzvAgsRKb9GSRyAUsaFCMo8AFLtHzscuVjr4pZFud+b/b2Z2Z3mPWEQbPdxnrIefqFfJI5X1LvbQQieSUxiPYl8jZz+X2QO+/Ec1jciZTznbOM4Qp6IV2MZl/D7Fj8LxoRQ0i4uK0AquhZ718AfL+I2zGNPBXEpwDP3SehXnMfOZaL9iNp9wEOP6+Jgq607oCeGwrnGYiDuKmRZoRO6LDMuYwjSaCV8Tnw329Bk5wcfM/tCYnOCNUPL3hG8NV7hNEUdfyWDLv+tQlL6GTeHAhqKL9cresnAAj9GusFSJ2cDflGAbJ5mfTWIi42spXewy6sIYNVLODL5FTq3YKPewIwz6SRTtGLzoZYxjQZj7HS8nbADzQgld+eerK0xRLaPxhvEEuupPHszJKDoAAAAASUVORK5CYII=">
+                <img class="Link" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABjklEQVQ4jb3US0tVURQH8N89PgY1yBwZaUiEExsGglqDRtHIPkOmDaRJ0AcoegiCYoMaRSOHQeSXsGGQvcAIETUUhCBroLfBXpd7uJzjuUK4YMNer/9a678Xm/8stQp/hmEMhL6Ojzg8bqFezGILdfyOU8cmnuFsu2DX8BOfMYm+nK8Pd/AF27jaDthfzKPziLguLOAPxsuCeqOz+aqqOVmQaOkpcs5KYzY6u4W3OFXR6Vc8aXVkEtmTodewIz3C7Youp7ChZWMuR/K50Dskfup4WgF4PuKG88Yb0lrkZSkChyoAa9gPDFkYD+Ke5QLvS4S/xulccndFAXApuhlosY/jF1ZxHXPS/j3Q5KxfwcgZ1nCvoNgVfIikxtnNTTOt4FHgEVZKJujABF7hDUbC3o1veFyU9ALvSgDLZFFatzNFzjXMtAnUhefSao0WBQxJ3NwM0GW8lzi9oMlXP+5KY25irKzimCbh3/ESD6PruvRh7Md9Q+KscMz8y4xgT/qaGpLhIgZjzB/4FMAnI/8A0JpZQjghwykAAAAASUVORK5CYII=">
+                <img class="Link" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAABDklEQVQ4jeXUsUoDQRDG8Z+JVSSFaVQQSWOtrVgo6iv4Cqm09hVirU1s9TkU7QPBRrFVEULAQgiKiVjcXtgcRi/BSj84uLmd+e8x3+zy7zQVvc9gHyso5qzvo4UjdGNgEVeYwwU+cgIL2MITNsIGYA3vATiu5tELDIXwcRFvWJgQ+BoYAyCU0MQpqjlA1ZDbDLWywA7WsYQ7NHzdggrquMGypIedbNIu2lG8g2u8hOJy+IsDPOM21KSmtkM8EgjTqOEx89TCWqwBMLsQq4cTnEnmk2jeRuk7YKouDnPkYdiUX1EKfMCsyQe7gnuGj96lZLDPjXf0tiVmbaIfXw4l7GFVvt6SGNfCsR/M+sP6BAtKNjh7w4mCAAAAAElFTkSuQmCC">
+                <!-- <p>Não pedimos pagamento antecipado para aprovação do empréstimo!</a></p> -->
+            </div>
+            <div class="Menu">
+                <ul class="phone"><li><a class="Link" href="./"><img src="./Estilo/Icones/Light/40x40.png" alt="home" style="padding: 0px 20px;"></a></li></ul>
+                <ul class="Links">
+                    <li><a class="Link" href="./"><img src="./Estilo/Icones/Light/40x40.png" alt="home"></a></li>
+                    <li><a class="Link" href="#Servicos">Serviços</a></li>
+                    <li><a class="Link" href="#Portfolio">Soluções</a></li>
+                    <li><a class="Link" href="#Parceiros">Parceiros</a></li>
+                </ul>
+                <div class="Botoes_Login">
+                    <a href="./Cadastro/" class="Secundario">Entre em contato</a> 
+                    <!-- <div class="Separador"></div>
+                    <a href="#" style="background-color: var(--cor5);" class="Primario">Entrar</a> -->
+                </div>
+            </div>
+        </div>
+        <section class="Home Center">
+            <div class="description fadeIn wait5">
+                <h1 style="font-size: 25px;">TITULO</h1>
+                <line></line>
+                <p>Descrição de destaque</p>
+                <line></line>
+                <line></line>
+                <a href="#" onclick="RightMenu(0)" class="Secundario">Entre em contato</a>
+                <line></line>
+                <p>sublink <a href="./">clique aqui</a></p>
+            </div>
+            <!-- <video style="width: 100%;filter: grayscale(50%);" data-object-fit="none" loop="" playsinline="" autoplay="" muted="" data-src="./Estilo/Videos/home.mp4" type="video/mp4" src="./Estilo/Videos/home.mp4"></video> -->
+        </section>
+        <section class="Center" id="Parceiros">
+            <line></line>
+            <h1 style="font-size: 20px;">PARCEIROS</h1>
+            <line></line>
+            <p>Quem são as empresas que acreditam no nosso trabalho.</p>
+            <line></line>
+            <line></line>
+            <div class="swiper-container" style="overflow: hidden;">
+                <div class="swiper-wrapper" style="width: 100%;" >
+                    <div class="swiper-slide" style="width: 100%;">
+                        <div class="Conjunto">
+                            <img src="./Estilo/Icones/Parceiros/2.webp" style="filter: grayscale(100%);padding: 20px;max-width: 150px;" alt="">
+                        </div>
+                    </div>
+                <div style="display: none;" class="swiper-button-next"></div>
+                <div style="display: none;" class="swiper-button-prev"></div>
+            </div>
+            <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+            <script>
+                var swiper = new Swiper('.swiper-container', {
+                    autoplay: {
+                        delay: 3000,
+                    },
+                    navigation: {
+                        nextEl: '.swiper-button-next',
+                        prevEl: '.swiper-button-prev',
+                    },
+                });
+            </script>
+        </section>
+        <line></line>
+        <div class="Info" style="background-color: var(--cor4);">
+            <p>Developed by AllRisk</p>
+        </div>
+        <div class="footer"></div>
+        <div class="Info">
+            <p style="color: black;">AllRisk | Todos os direitos reservados</p>
+        </div>
+        <script src="./Scripts/index.js"></script>
     </body>
 </html>

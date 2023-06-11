@@ -1,0 +1,155 @@
+@import url('./Cores.css');
+@import url('./Widgets.css');
+@import url('./Tipografia.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+	font-family: 'Texto', sans-serif; 
+    font-weight: 500;
+    font-size: 14px;
+}
+
+html{
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    scroll-behavior: smooth;
+}
+
+html, body, section{
+    scroll-behavior: smooth;
+    width: 100%;
+    height: 100%;
+    min-height: 100% !important;
+}
+
+.Fundo, .Carregamento{
+    z-index: 20;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.452);
+}
+
+.shadow {
+    width: 100%;
+    height: 100%;
+    z-index: 12;
+    background-color: rgb(0 0 0 / 73%);
+    position: fixed;
+}
+
+section{
+    width: 100%;
+    height: 600px;
+}
+
+.Center, .CenterSet{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.CenterSet{
+    align-items: center;
+    text-align: center;
+}
+
+.CenterSet p{
+    text-align: center;
+}
+
+line{
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+set{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+.set{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.pc{
+    display: block;
+}
+
+.phone, .hide{
+    display: none;
+}
+
+.footer{
+    background-color: var(--cor1);
+    min-height: 50%;
+    height: 50%;
+}
+
+.footer .set{
+    padding: 20px;
+}
+
+.footer set{
+    width: 50px;
+}
+
+.footer p, .footer a{
+    color: var(--cor6);
+}
+
+.urls{
+    text-align: left;
+}
+
+.Info{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    text-align: center;
+}
+
+.Info p{
+    padding: 15px;
+    color: var(--cor6);
+}
+
+
+@media  (max-width: 800px) {
+    .TemporarySet, .CardSection{
+        flex-direction: column;
+    }
+
+    html, body, section{
+        width: 100%;
+        height: auto;
+        min-height: 100% !important;
+    }
+
+    .phone{
+        display: block;
+    }
+
+    .pc{
+        display: none;
+    }
+    
+    .footer *{
+        flex-direction: column;
+        padding: 0px;
+    }
+}

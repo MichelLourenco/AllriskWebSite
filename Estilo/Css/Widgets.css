@@ -1,0 +1,152 @@
+@import url('./Cores.css');
+
+/* Widgets do sistema */
+
+button, .input{
+    padding: 8px 20px;
+    cursor: pointer;
+    transition-duration: 0.5s;
+    border-radius: 0px;
+}
+
+.input{
+    border: 1px solid #000;
+}
+
+.file_customizada::-webkit-file-upload-button {
+    display: none;
+}
+
+.file_customizada{
+    outline: none;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.Primario{
+    /* border-radius: 25px; */
+    padding: 8px 20px;
+    background-color: #fff;
+    color: #000;
+    text-decoration: none;
+    border: none;
+}
+
+.Primario:hover{
+    background-color: rgb(236, 235, 235);
+}
+
+.Secundario{
+    /* border-radius: 25px; */
+    padding: 8px 20px;
+    background-color: var(--cor4);
+    color: #fff;
+    text-decoration: none;
+    border: none;
+}
+
+.Secundario:hover{
+    /* border: 1px solid var(--cor3); */
+    transition-duration: 0.5s;
+    background-color: var(--cor2);
+}
+
+.Botoes_Login{
+    display: flex;
+    flex-direction: row;
+    padding: 15px;
+}
+
+.Separador{
+    display: block;
+    width: 20px;
+    height: 20px;
+}
+
+line{
+    display: block;
+    width: 100%;
+    height: 20px;
+}
+
+.LGPD{
+    display: flex;
+    justify-content: space-around;
+    box-shadow: 5px 0px 5px 1px rgba(0, 0, 0, 0.322);
+    width: 100%;
+    bottom: 0px;
+    position: fixed;
+    font-size: 15px;
+    z-index: 10;
+    background-color: var(--cor5);
+}
+
+.LGPD p{
+    padding: 13px;
+    font-size: 14px;
+}
+
+.LGPD p a{
+    color: #000;
+}
+
+.LGPD p a strong{
+    font-size: 13px;
+    font-weight: 900;
+}
+
+.LGPD close{
+    padding: 15px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+.TemporarySet, .CardSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.Card{
+    padding: 20px;
+    min-width: 300px;
+    min-height: 200px;
+    text-align: left;
+    background-color: white;
+    margin: 20px;
+    /* border-radius: 15px; */
+}
+
+.Card:hover{
+    cursor: pointer;
+    filter: brightness(0.90);
+    transition-duration: 0.5s;
+}
+
+/* Janela de alerta */
+
+.Alerta{
+    display: flex;
+    padding: 30px;
+    border-radius: 2px;
+    background-color: var(--cor6);
+    min-width: 500px;
+    max-width: 500px;
+    min-height: 200px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    word-break: break-all;
+}
+
+.Alerta .Botoes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.Alerta .Botoes button{
+    margin: 0px 5px;
+}

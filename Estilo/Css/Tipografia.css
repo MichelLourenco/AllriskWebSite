@@ -1,0 +1,25 @@
+
+@font-face {
+    font-family: "Texto";
+    src: url("../Fontes/gordita-regular.woff") format('woff');
+}
+
+@font-face {
+    font-family: "TextoStrong";
+    src: url("../Fontes/gordita-medium.woff") format('woff');
+}
+
+/* Configuração de tags */
+
+h1, h2, h3, h4, h5, h6{
+    font-family: 'TextoStrong';
+}
+
+p, a{
+    font-family: 'Texto';
+    font-size: 13px;
+}
+
+strong{
+    font-family: 'TextoStrong';
+}
